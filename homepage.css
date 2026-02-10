@@ -1,0 +1,82 @@
+/* HERO TEXT OVERLAY */
+.am-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  pointer-events: none;
+}
+
+/* This creates the SAME 1200px centered grid as the menu */
+.am-hero-container {
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+/* Your text block */
+.am-hero-content {
+  max-width: 520px;
+  text-align: left;
+}
+
+/* Title */
+.am-hero-title {
+  margin: 0 0 12px;
+  font-family: 'Georgia', 'Times New Roman', Times, serif;
+  font-weight: 500;
+  font-size: 54px;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  color: #2b2b2b;
+}
+
+/* Subtitle */
+.am-hero-subtitle {
+  margin: 0;
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #6e6e6e;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .am-hero-title {
+    font-size: 46px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .am-hero-title {
+    font-size: 34px;
+  }
+  .am-hero-subtitle {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 600px) {
+  .am-hero-container {
+    align-items: flex-start;
+    padding-top: 80px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .am-hero-title {
+    font-size: 24px;
+    line-height: 1.15;
+  }
+
+  .am-hero-subtitle {
+    font-size: 12px;
+    max-width: 32ch;
+  }
+}

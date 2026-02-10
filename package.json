@@ -1,0 +1,10 @@
+{
+  "name": "gomag",
+  "private": true,
+  "devDependencies": {
+    "prettier": "^3.8.1"
+  },
+  "scripts": {
+    "format": "prettier --write \"**/*.{js,css,json,md,html}\""
+  }
+}
