@@ -9,7 +9,7 @@
   pointer-events: none;
 }
 
-/* This creates the SAME 1200px centered grid as the menu */
+/* Desktop grid (works on desktop) */
 .am-hero-container {
   max-width: 1200px;
   height: 100%;
@@ -19,13 +19,11 @@
   align-items: center;
 }
 
-/* Your text block */
 .am-hero-content {
   max-width: 520px;
   text-align: left;
 }
 
-/* Title */
 .am-hero-title {
   margin: 0 0 12px;
   font-family: 'Georgia', 'Times New Roman', Times, serif;
@@ -36,7 +34,6 @@
   color: #2b2b2b;
 }
 
-/* Subtitle */
 .am-hero-subtitle {
   margin: 0;
   font-family:
@@ -53,15 +50,25 @@
   }
 }
 
-@media (max-width: 1024px) {
+/* ✅ TABLET / iPads: match header container width (viewport - 30px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .am-hero-container {
+    max-width: none; /* stop using 1200px grid */
+    width: calc(100% - 30px); /* matches your header: -15px / -15px */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .am-hero-title {
     font-size: 34px;
   }
+
   .am-hero-subtitle {
     font-size: 13px;
   }
 }
 
+/* Mobile */
 @media (max-width: 600px) {
   .am-hero-container {
     align-items: flex-start;

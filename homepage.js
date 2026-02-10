@@ -12,15 +12,20 @@
     overlay.className = 'am-hero-overlay';
 
     overlay.innerHTML = `
-      <div class="am-hero-content">
-        <h1 class="am-hero-title"> 
-          Nutriție premium<br>
-          pentru animale
-        </h1>
-        <p class="am-hero-subtitle">
-          Recomandată de specialiști • Adaptată fiecărei diete
-        </p>
-      </div>
+<div class="am-hero-overlay">
+  <div class="am-hero-container">
+    <div class="am-hero-content">
+      <h1 class="am-hero-title">
+        Nutriție premium<br>
+        pentru animale
+      </h1>
+      <p class="am-hero-subtitle">
+        Recomandată de specialiști • Adaptată fiecărei diete
+      </p>
+    </div>
+  </div>
+</div>
+
     `;
 
     hero.style.position = 'relative';
